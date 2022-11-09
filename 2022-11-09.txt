@@ -1,0 +1,68 @@
+CREATE TABLE `tanulo` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `vezetek_nev` varchar(50) COLLATE utf8_hungarian_ci NOT NULL,
+  `kereszt_nev` varchar(50) COLLATE utf8_hungarian_ci NOT NULL,
+  `szuletesi_datum` date NOT NULL,
+  `neme` tinyint(1) NOT NULL,
+  `csoport` int(10) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+
+--
+-- Indexek a kiírt táblákhoz
+--
+
+--
+-- A tábla indexei `tanulo`
+--
+ALTER TABLE `tanulo`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- A kiírt táblák AUTO_INCREMENT értéke
+--
+
+--
+-- AUTO_INCREMENT a táblához `tanulo`
+--
+ALTER TABLE `tanulo`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+
+1csoport
+
+INSERT INTO `tanulo` (`id`, `vezetek_nev`, `kereszt_nev`, `szuletesi_datum`, `neme`, `csoport`)
+VALUES 
+(NULL, 'Barcsák', 'Vinzent', '2005-06-01', '1', '1'),
+(NULL, 'Borbély', 'Gergely', '2005-08-23', '1', '1'),
+(NULL, 'Csordás', 'Csenge Zsófia', '2005-01-12', '0', '1'),
+(NULL, 'Enyedi', 'Sándor', '2005-06-01', '1', '1'),
+(NULL, 'Gál', 'Máté', '2005-07-29', '1', '1'),
+(NULL, 'György', 'Botond', '2006-02-22', '1', '1'),
+(NULL, 'Héring', 'Máté', '2005-05-03', '1', '1'),
+(NULL, 'Juhász', 'Bence', '2005-09-13', '1', '1'),
+(NULL, 'Kreipos', 'Gábor', '2005-01-06', '1', '1'),
+(NULL, 'Lajka', 'Kristóf', '2006-02-02', '1', '1'),
+(NULL, 'Nemes', 'Alexandra', '2006-04-26', '0', '1'),
+(NULL, 'Skarufa', 'Ákos', '2006-01-14', '1', '1'),
+(NULL, 'Szabó', 'Gergely', '2005-08-16', '1', '1'),
+(NULL, 'Váradi', 'Ádám', '2005-12-26', '1', '1');
+
+2.csoport
+
+INSERT INTO `tanulo` (`id`, `vezetek_nev`, `kereszt_nev`, `szuletesi_datum`, `neme`, `csoport`)
+VALUES 
+(NULL, 'Batykó', 'Bence', '2005-11-12', '1', '2'),
+(NULL, 'Kovács', 'Martin', '2004-11-30', '1', '2'),
+(NULL, 'Kovács', 'Gyula', '2006-01-05', '1', '2'),
+(NULL, 'Kucskár', 'Fábián', '2005-09-11', '1', '2'),
+(NULL, 'Mácza', 'Gábor', '2006-04-19', '1', '2'),
+(NULL, 'Máté', 'Milán', '2005-11-06', '1', '2'),
+(NULL, 'Molnár', 'Ferenc', '2006-03-10', '1', '2'),
+(NULL, 'Simon', 'Bendegúz', '2006-02-10', '1', '2'),
+(NULL, 'Tarcali', 'Vivien', '2005-03-07', '0', '2'),
+(NULL, 'Trézsi', 'Balázs', '2005-04-05', '1', '2'),
+(NULL, 'Varga', 'Milán', '2005-06-09', '1', '2'),
+(NULL, 'Csáki', 'Roland', '2005-07-06', '1', '2'),
+(NULL, 'Lantos', 'László', '2005-08-05', '1', '2');
+
+
