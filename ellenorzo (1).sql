@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Dec 07. 12:01
+-- Létrehozás ideje: 2023. Jan 18. 12:23
 -- Kiszolgáló verziója: 10.4.20-MariaDB
 -- PHP verzió: 7.3.29
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Adatbázis: `rendszergazda`
+-- Adatbázis: `ellenorzo`
 --
 
 -- --------------------------------------------------------
@@ -48,7 +48,7 @@ INSERT INTO `ellenorzo` (`id`, `tantargy_neve`, `jegy`, `datum`, `tema`) VALUES
 (6, 'matematika', 4, '2022-10-28', 'orai feladat'),
 (7, 'matematika', 3, '2022-11-10', 'irasbeli ropdolgozat'),
 (8, 'angol nyelv', 5, '2022-09-30', 'irasbeli ropdolgozat'),
-(9, 'angol nyelv', 5, '2022-11-28', 'irasbeli ropdolgozat'),
+(9, 'angol nyelv', 5, '2022-10-28', 'irasbeli ropdolgozat'),
 (10, 'tortenelem', 5, '2022-10-17', 'szobeli felelet'),
 (11, 'tortenelem', 4, '2022-11-07', 'irasbeli temazaro dolgozat'),
 (12, 'tortenelem', 5, '2022-11-28', 'szobeli felelet'),
@@ -79,7 +79,25 @@ INSERT INTO `ellenorzo` (`id`, `tantargy_neve`, `jegy`, `datum`, `tema`) VALUES
 (39, 'halozatok', 5, '2022-10-25', 'szobeli felelet'),
 (40, 'halozatok', 5, '2022-10-25', 'szobeli felelet'),
 (41, 'szakmai angol', 4, '2022-10-09', 'irasbeli ropdolgozat'),
-(42, 'szakmai angol', 5, '2022-11-09', 'irasbeli ropdolgozat');
+(42, 'szakmai angol', 5, '2022-11-09', 'irasbeli ropdolgozat'),
+(43, 'magyar', 5, '2023-01-12', 'szobeli felelet'),
+(44, 'magyar', 4, '2022-12-20', 'irasbeli temazaro'),
+(45, 'angol', 5, '2022-11-28', 'irasbeli ropdolgozat'),
+(46, 'angol', 5, '2022-12-19', 'irasbeli ropdolgozat'),
+(47, 'matematika', 4, '2022-12-02', 'irasbeli felelet'),
+(48, 'matematika', 5, '2022-12-09', 'irasbeli ropdolgozat'),
+(49, 'tortenelem', 5, '2022-12-01', 'szobeli felelet'),
+(50, 'tortenelem', 4, '2022-12-19', 'irasbeli ropdolgozat'),
+(51, 'tortenelem', 5, '2023-01-12', 'szobeli felelet'),
+(52, 'tortenelem', 5, '2023-01-17', 'orai munka'),
+(53, 'digitalis kultura', 4, '2022-12-16', 'gyakorlati feladat'),
+(54, 'testneveles', 5, '2022-12-05', 'orai munka'),
+(55, 'ikt projektmunka', 5, '2022-12-13', 'projektmunka'),
+(56, 'ikt projektmunka', 5, '2022-12-13', 'projektmunka'),
+(57, 'ikt projektmunka ', 4, '2023-01-10', 'projektmunka'),
+(58, 'ikt projektmunka', 5, '2023-01-10', 'projektmunka'),
+(59, 'halozatok ', 1, '2022-12-14', 'teszt feladat'),
+(60, 'halozatok', 3, '2023-01-12', 'gyakorlati feladat');
 
 --
 -- Indexek a kiírt táblákhoz
@@ -99,7 +117,7 @@ ALTER TABLE `ellenorzo`
 -- AUTO_INCREMENT a táblához `ellenorzo`
 --
 ALTER TABLE `ellenorzo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
